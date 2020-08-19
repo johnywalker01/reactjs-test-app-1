@@ -1,0 +1,29 @@
+.resizable {
+    height: 200px;
+    width: 300px;
+    background: rgb(190, 190, 190);
+    position: relative;
+}
+
+.resizer {
+    width: 6px;
+    height: 6px;
+    background: rgb(1, 111, 161);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: se-resize;
+}
+
+/* 
+.handle::after {
+    content: "";
+    width: 9px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: -4px;
+    background-color: transparent;
+    cursor: ew-resize;
+    z-index: 2;
+} */

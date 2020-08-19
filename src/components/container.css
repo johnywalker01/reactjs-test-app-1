@@ -1,0 +1,27 @@
+.flx-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flx-row {
+    flex-direction: row;
+}
+
+.flx-column {
+    flex-direction: column
+}
+
+.div1 {
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.div2 {
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    resize: both;
+    overflow: auto;
+}
