@@ -13,7 +13,7 @@ class RowComp extends React.Component<Props, State> {
 
     render() {
         return (
-            <div className="row">
+            <div className="flex-m1 row">
                 <ResizeDivComp />
                 <ResizeDivComp />
             </div>

@@ -1,18 +1,40 @@
 .resizable {
-    height: 200px;
-    width: 300px;
-    background: rgb(190, 190, 190);
+    height: 50px;
+    width: 150px;
+    background: rgb(255 236 225);
     position: relative;
 }
 
 .resizer {
-    width: 6px;
-    height: 6px;
-    background: rgb(1, 111, 161);
-    position: absolute;
+    --div-border-width: 4px;
     right: 0;
     bottom: 0;
     cursor: se-resize;
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    background: transparent;
+    border-top: 0 solid transparent;
+    border-left: 0 solid transparent;
+    border-bottom: 0 solid #3d4ff3;
+    border-right: 0 solid #3d4ff3;
+    border-top-width: var(--div-border-width);
+    border-left-width: var(--div-border-width);
+    border-right-width: var(--div-border-width);
+    border-bottom-width: var(--div-border-width);
+}
+
+.dragger {
+    left: 50%;
+    top: 0;
+    cursor: grab;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    margin: 0 auto;
+    background: #3d4ff3;
+    /* border-radius: 50%; */
 }
 
 /* 
