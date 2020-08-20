@@ -1,12 +1,13 @@
 .resizable {
     height: 50px;
     width: 150px;
-    background: rgb(255 236 225);
+    background: rgb(247 244 244);
     position: relative;
 }
 
 .resizer {
     --div-border-width: 4px;
+    --div-border-color: #0a2967;
     right: 0;
     bottom: 0;
     cursor: se-resize;
@@ -17,8 +18,8 @@
     background: transparent;
     border-top: 0 solid transparent;
     border-left: 0 solid transparent;
-    border-bottom: 0 solid #3d4ff3;
-    border-right: 0 solid #3d4ff3;
+    border-bottom: 0 solid var(--div-border-color);
+    border-right: 0 solid var(--div-border-color);
     border-top-width: var(--div-border-width);
     border-left-width: var(--div-border-width);
     border-right-width: var(--div-border-width);
@@ -33,19 +34,6 @@
     width: 8px;
     height: 8px;
     margin: 0 auto;
-    background: #3d4ff3;
-    /* border-radius: 50%; */
+    background: #16b15b;
+    ;
 }
-
-/* 
-.handle::after {
-    content: "";
-    width: 9px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin-left: -4px;
-    background-color: transparent;
-    cursor: ew-resize;
-    z-index: 2;
-} */

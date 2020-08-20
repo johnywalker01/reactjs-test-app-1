@@ -51,8 +51,10 @@ class ResizeDivComp extends React.Component<Props, State> {
     doResize = (e: any) => {
         let width = (this.startWidth + e.clientX - this.startX);
         let height = (this.startHeight + e.clientY - this.startY);
-        this.parentDiv.style.width = (width) + 'px';
-        this.parentDiv.style.height = (height) + 'px';
+        if (width > 40 && height > 20) {
+            this.parentDiv.style.width = (width) + 'px';
+            this.parentDiv.style.height = (height) + 'px';
+        }
     }
 
     stopResize = (e: any) => {
